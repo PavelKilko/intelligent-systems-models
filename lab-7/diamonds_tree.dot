@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="table <= 57.05\ngini = 0.715\nsamples = 43154\nvalue = [1278, 3927, 17247, 11069, 9633]\nclass = Ideal", fillcolor="#d9faf4"] ;
+1 [label="depth <= 63.05\ngini = 0.495\nsamples = 23769\nvalue = [520, 1515, 16257, 1372, 4105]\nclass = Ideal", fillcolor="#85efdb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="depth <= 62.75\ngini = 0.357\nsamples = 20591\nvalue = [19, 118, 16204, 1372, 2878]\nclass = Ideal", fillcolor="#6aebd3"] ;
+1 -> 2 ;
+3 [label="gini = 0.32\nsamples = 19176\nvalue = [17, 104, 15602, 1197, 2256]\nclass = Ideal", fillcolor="#63ead1"] ;
+2 -> 3 ;
+4 [label="gini = 0.61\nsamples = 1415\nvalue = [2, 14, 602, 175, 622]\nclass = Fair", fillcolor="#fefafd"] ;
+2 -> 4 ;
+5 [label="depth <= 64.35\ngini = 0.633\nsamples = 3178\nvalue = [501, 1397, 53, 0, 1227]\nclass = Very Good", fillcolor="#f3fdee"] ;
+1 -> 5 ;
+6 [label="gini = 0.518\nsamples = 2587\nvalue = [5, 1321, 45, 0, 1216]\nclass = Very Good", fillcolor="#f5fdf0"] ;
+5 -> 6 ;
+7 [label="gini = 0.279\nsamples = 591\nvalue = [496, 76, 8, 0, 11]\nclass = Premium", fillcolor="#ea985e"] ;
+5 -> 7 ;
+8 [label="depth <= 63.05\ngini = 0.649\nsamples = 19385\nvalue = [758, 2412, 990, 9697, 5528]\nclass = Good", fillcolor="#c4c3f7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="table <= 62.05\ngini = 0.585\nsamples = 16905\nvalue = [264, 1280, 972, 9697, 4692]\nclass = Good", fillcolor="#afaef4"] ;
+8 -> 9 ;
+10 [label="gini = 0.553\nsamples = 16034\nvalue = [90, 893, 972, 9697, 4382]\nclass = Good", fillcolor="#a6a5f3"] ;
+9 -> 10 ;
+11 [label="gini = 0.636\nsamples = 871\nvalue = [174, 387, 0, 0, 310]\nclass = Very Good", fillcolor="#edfbe4"] ;
+9 -> 11 ;
+12 [label="depth <= 64.35\ngini = 0.638\nsamples = 2480\nvalue = [494, 1132, 18, 0, 836]\nclass = Very Good", fillcolor="#e7fadb"] ;
+8 -> 12 ;
+13 [label="gini = 0.51\nsamples = 1941\nvalue = [21, 1074, 14, 0, 832]\nclass = Very Good", fillcolor="#e2f9d4"] ;
+12 -> 13 ;
+14 [label="gini = 0.218\nsamples = 539\nvalue = [473, 58, 4, 0, 4]\nclass = Premium", fillcolor="#e99254"] ;
+12 -> 14 ;
+}
